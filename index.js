@@ -9,7 +9,8 @@ async function getCharacters() {
 
   try {
     const fetchedCharacters = await fetch(url)
-      .then(res => res.json())
+      .then(res => res.json());
+      console.log(fetchedCharacters)
     characters.push(...fetchedCharacters);
   }
   catch (ex) {
